@@ -76,7 +76,7 @@ else:
         sleep(2)
         token = input('token')
         w = 'https://pastebin.com/raw/xPfV5eKD'
-        start_msg = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=@BBIBIEB @BBIBIEB").json()
+        start_msg = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=@vooo_o @vooo_o").json()
         id_msg = start_msg['result']['message_id']
         rss = requests.get(w).text
         if 'weaver' in rss:
